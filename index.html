@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bright.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap');
+    </style>
+
+    <title>AluraDev</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/LogoAluraDev.svg" alt="Logo do Alura Dev" class="logo">
+        <input type="search" name="Barra_Pesquisa" class="pesquisa" placeholder="Busque por Algo">
+        <a href="#" class="usuario">
+            <img src="img/FotoUsuario.png" alt="Perfil do Usuário" class="usuario__foto">
+            <p class="usuario__nome">Harry</p>
+        </a>
+    </header>
+    <section class="grid">
+        <div class="menu">
+            <p class="menu__titulo">Menu</p>
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__item__titulo"><img src="img/IconeEditor.svg" alt="Icone do Editor" class="menu__icone index"> Editor de Código
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="comunidade.html" class="menu__item__titulo">
+                        <img src="img/IconeComunidade.svg" alt="Icone Comunidade" class="menu__icone">Comunidade
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="conteudo">
+            <div class="caixa_editor">
+                <div class="container_editor">
+                    <img src="img/mac_buttons.svg" alt="botoes Mac" class="botoes_mac">
+                    <code class="editor" contenteditable="true">Code Here!</code>
+                </div>
+            </div>
+            <button class="botao_Highlight">Visualizar com o highlight</button>
+        </div>
+        <div class="menu_lateral">
+            <p class="menu_lateral__titulo">Seu Projeto</p>
+            <ul class="menu_lateral__inputs">
+                <li class="input__nome__projeto">
+                    <input type="text" name="nome_projeto" class="input" placeholder="Nome do seu projeto">
+                </li>
+                <li class="input__descricao__projeto">
+                    <input type="text" name="descricao_projeto" class="input input__descricao" placeholder="Descrição do seu projeto">
+                </li>
+            </ul>
+            <p class="menu_lateral__titulo">Personalização</p>
+            <ul class="menu_lateral__seletor">
+                <li class="seletor_linguagem">
+                    <select name="linguagem" id="seletor__linguagem">
+                    <option class="linguagem" value="JavaScript">JavaScript</option>
+                    <option class="linguagem" value="HTML">HTML</option>
+                    <option class="linguagem" value="CSS">CSS</option>
+                </select>
+                </li>
+                <input type="color" name="color_picker" id="seletor__cor">
+                <button class="botao_salvar">Salvar Projeto</button>
+            </ul>
+        </div>
+    </section>
+    <script src="index.js">
+    </script>
+    <script>
+        hljs.highlightAll();
+    </script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
